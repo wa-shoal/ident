@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="hidden-basket-holder">
+	<div id="hidden-basket-container">
+	<div id="close">+</div>
+		<div class="basket-contents">
+			<h3>Order Summary</h3>
+			<div class="basket-products">
+			</div>
+		<button class="basket-btn-hidden">Proceed to Basket</button>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+
+<button id="mobile-basket-btn">Add to basket</button>
+
+<div class="basket-container" id="basket-counter-container">
+	<i class="fas fa-shopping-basket"></i>
+	<span id="qty-counter">0</span>
+</div>
+
+<div class="product-title-section">
+	<div class="product-title-block">
+	   <h1 class="product-title">Red Custom Pre-Printed Markers - 2 Markers - Dimensions: 86mm x 27mm - Printable Area: 60mm x 22mm</h1>
+	</div>
+	
+	<div class="brand-block">
+	  <img src="https://www.cablecraft.co.uk/static/version1634113845/frontend/Cablecraft/default/en_GB/images/logo.svg" alt="">
+	</div>
+</div>
+
+<span class="part-code">Part no: <span class="product-sku" id="sku">G2 PP RED</span></span>
+
+<div class="product-image-price-container">
+    <div class="product-images-container">
+	  <div class="image-preview-container">
+		  <img src="https://www.cablecraft.co.uk/media/catalog/product/g/2/g2-pp-red.jpg" alt="">
+      </div>
+	  
+	  <div class="small-product-images">
+	     <img src="https://www.cablecraft.co.uk/media/catalog/product/g/2/g2ppred.jpg" alt="" class="small-image">
+	     <img src="" alt="" class="small-image">
+	     <img src="" alt="" class="small-image">
+	  </div>
+	</div>
+	
+	<div class="price-block">
+	    <div class="price-content">
+		   <form id="basket-form">
+			   <span class="product-price-exc-vat">Excl. VAT <span class="price price-exc-vat">&#163;<span id="ex-vat">2.60</span></span></span>
+			   <span class="product-price-inc-vat">Incl. VAT <span class="price">&#163;<span id="inc-vat">3.12</span></span></span>
+			   
+			   <div class="qty-stock-container">
+			     <div class="qty-block">
+				   <label class="label" for="qty">Qty</label>
+				   <input type="number" name="qty" id="qty" value="1">
+				   <button class="add-qty-btn" id="decrement">-</button>
+				   <button class="add-qty-btn" id="increment">+</button>
+				 </div>
+
+				 <div id="image-preview" class="image-preview">
+					<div class="left-label-holes">
+						<div class="label-hole top-left-hole"></div>
+						<div class="label-hole bottom-right-hole"></div>
+					</div>
+				
+					<p class="preview-text" id="preview-text">CABLECRAFT</p>
+		
+					<div class="right-label-holes">
+						<div class="label-hole top-right-hole"></div>
+						<div class="label-hole bottom-left-hole"></div>
+					</div>
+				</div>
+
+                 <div class="label-lines">
+                     <div class="line-container">
+                        <label for="line-one" class="label-line-text">Enter your wording to preview</label>
+                        <input type="text" name="line-one" id="preview-input" placeholder="e.g. CABLECRAFT" maxlength="25">
+                     </div>
+
+					<div class="user-textarea">
+						<label for="line-one" class="label-line-text">Please enter your wording for each marker <span class="characters-text">1 Line per marker</span></label>
+						<textarea name="" id="textarea-input" cols="30" rows="10"></textarea>
+					</div>
+
+					<div class="custom">
+						<span class="custom-text">Custom dimensions</span>
+						<input type="text" placeholder="H" id="custom-height">
+						<span class="custom-times">x</span>
+						<input type="text" placeholder="W" id="custom-width">
+						<a href="#" id="update-custom" class="custom-btn">Update</a>
+					</div>
+					                     
+                    <!-- <div class="line-container">
+                        <label for="line-two" class="label-line-text">Line 2 <span class="characters-text">10 Characters Max</span></label>
+                        <input type="text" id="line-two" name="line-two" placeholder="e.g. CRAFT" maxlength="10">
+                     </div>-->
+                 </div>
+				 
+				 <div id="message"></div>
+				 
+				 <div class="qty-btns-container">
+				   <button class="qty-btns" id="add-to-basket">Add to Basket</button>
+				   <button class="qty-btns" id="add-to-project" title="Add to Project List"><i class="fas fa-clipboard-list"></i> Add to Project List</button>
+				   <div id="project-login"></div>
+				 </div>
+			   </div>
+		   </form>
+	   </div>
+	   
+	   <div class="frequently-bought">
+	      <h3 class="frequently-title">Frequently bought together</h3>
+
+	   </div>
+	</div>
+</div>
+
+<div class="product-info-container">
+  <div class="product-desc-container">
+     <div class="accordion">
+	     <h4 class="accordion-title">Description</h4>
+	 </div>
+    <div class="accordion-content show">
+        <p>Our in-house pre-print identification department can custom pre-print your G2 cards for you. To place an order simply add the required text 
+        into the text box above and add to your basket.</p>
+		<p>Request a sample pack including our most popular custom identification products completely free of charge. We’re sure you’ll be convinced of our quality materials,
+			 and the various custom solutions we can offer you</p>
+		<div class="sample-btn-container">
+			<a href="#" class="sample-pack">Request Sample</a>
+		</div>
+    </div>
+	 
+	  <div class="accordion-block">
+		<h4 class="accordion-title">Specification <i class="fas fa-chevron-down"></i></h4>
+	  </div>
+
+	   <div class="accordion-content">
+		 <table>
+			<tbody>
+			<tr> 
+			 <td><b>Material:</b></td>
+			 <td>Acrylic-Styrene-Acrylonitrile (ASA), Halogen-Free Plastic</td>
+			</tr>
+			<tr> 
+			 <td><b>Service Temperature Range:</b></td>
+			 <td>-40˚C to +96˚C</td>
+			</tr>
+			<tr> 
+			 <td><b>Material Tests:</b></td>
+			 <td>MIL-M-81531, Chemical Resistant, ISO 48920-2: 2013</td>
+			</tr>
+			</tbody>
+		</table>
+	  </div>
+	 
+	  <div class="accordion-block">
+		<h4 class="accordion-title">Downloads <i class="fas fa-chevron-down"></i></h4>
+	  </div>
+
+	<div class="accordion-content">
+		<i class="far fa-file-pdf"></i><span class="datasheet">t2212_specsheet.pdf (Size: 351 KB)</span>
+	</div>
+	 
+	 <div class="accordion-block">
+		<h4 class="accordion-title">Delivery <i class="fas fa-chevron-down"></i></h4>
+	 </div>
+
+	<div class="accordion-content">
+		<table>
+		<tbody>
+		<tr> 
+			<td><b>Free UK Next Day Delivery:</b></td>
+			<td>Online orders over £35 placed before 4pm. (excludes some products)</td>
+		</tr>
+		<tr> 
+			<td><b>UK Next Day Delivery:</b></td>
+			<td>Online orders under £35 for next day delivery are £4.50. Orders must be placed before 4pm.</td>
+		</tr>
+		</tbody>
+	</table>
+	</div>
+  </div>
+  
+  <div class="recommenders-container">
+     <h4 class="recommender-heading">You may also like</h4>
+	 <div class="recommender-blocks">
+	   <div class="recommender-block">
+	      <div class="recommender-content">
+		    <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+			<span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+			<span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+			 <form>
+			  <button class="basket-btn">Add to basket</button>
+			 </form>
+		  </div>
+	   </div>
+	   
+	   <div class="recommender-block">
+	      <div class="recommender-content">
+		    <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+			<span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+			<span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+			 <form>
+			  <button class="basket-btn">Add to basket</button>
+			 </form>
+		  </div>
+	   </div>
+
+	   <div class="recommender-block">
+		<div class="recommender-content">
+		  <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+
+	 <div class="recommender-block">
+		<div class="recommender-content">
+		  <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+	 </div>
+  </div>
+<!-- PRODUCT INFO CONTAINER END -->
+</div>
+
+<h2>Recently view products</h2>
+
+<div class="recommender-blocks">
+	<div class="recommender-block recently-viewed">
+	   <div class="recommender-content">
+		<div class="recently-viewed-image-container">
+			<img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		</div>
+		 <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		 <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		  <form>
+		   <button class="basket-btn">Add to basket</button>
+		  </form>
+	   </div>
+	</div>
+	
+	<div class="recommender-block recently-viewed">
+		<div class="recommender-content">
+		 <div class="recently-viewed-image-container">
+			 <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		 </div>
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+
+	 <div class="recommender-block recently-viewed">
+		<div class="recommender-content">
+		 <div class="recently-viewed-image-container">
+			 <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		 </div>
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+
+	 <div class="recommender-block recently-viewed">
+		<div class="recommender-content">
+		 <div class="recently-viewed-image-container">
+			 <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		 </div>
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+
+	 <div class="recommender-block recently-viewed">
+		<div class="recommender-content">
+		 <div class="recently-viewed-image-container">
+			 <img src="https://www.cablecraft.co.uk/media/catalog/product/w/i/wintotal_software_1.png" alt="">
+		 </div>
+		  <span class="recommender-title">TE Connectivity WinTotal 7 Printing Software</span>
+		  <span class="recommender-exc-vat">Excl VAT <span class="recommender-price">517.45</span></span>
+		   <form>
+			<button class="basket-btn">Add to basket</button>
+		   </form>
+		</div>
+	 </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
